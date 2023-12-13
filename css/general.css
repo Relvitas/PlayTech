@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #ECECEC;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+.encabezado {
+    background-color: #ECECEC;
+    margin-bottom: 1.5%;
+}
+
+img {
+    width: 120px;
+    margin: 25px;
+    margin-left: 5%;
+}
+
+nav {
+    float: right;
+    margin-right: 3.5%;
+}
+
+.opciones li {
+    list-style: none;
+    margin: 0 25px 0 0;
+    float: left;
+    padding: 20px 0;
+    position: relative;
+}
+
+.elemento a {
+    text-decoration: none;
+    color: #1C2833;
+    font-weight: bold;
+}
+
+.elemento a::before {
+    display: block;
+    content: '';
+    width: 0%;
+    background: gray;
+    height: 4px;
+    top: 13px;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.elemento a:hover::before {
+    width: 100%;
+}
+
+
+.wrapper .article {    
+    width: 66%;
+    float: left;
+    margin: 0 2% 0;
+}
+
+.article article {
+    background-color: white;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.text {
+    padding: 20px;
+}
+
+.product {
+    display: flex;
+    float: left;
+}
+
+.product img {
+    width: 30%;
+    height: 55%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+aside {
+    width: 28%;
+    margin-right: 2%;
+    background-color: #E88873;
+    border-radius: 5px;
+    float: left;
+}
+
+aside h2 {
+    text-align: center;
+}
+
+.related a{
+    text-decoration: none;
+    color: black;
+}
+
+.contenedor-elemento {
+    list-style: none;
+    padding: 0px 20px 0px;
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    background-color: darksalmon;
+}
+
+.container-footer-all {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.container-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.colum1,
+.colum2,
+.colum3 {
+    max-width: 400px;
+}
+
+.colum1 h1,
+.colum2 h1,
+.colum3 h1 {
+    font-size: 20px;
+}
+
+.colum1 p {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.row, 
+.row2{
+    display: flex;
+}
+
+.row img,
+.row2 img {
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px 20px 0px;
+}
+
+.row label,
+.row2 label {
+    max-width: 110px;
+}
+
+.container-footer {
+    width: 100%;
+}
+
+.footer {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px 20px;
+}
+
+.copyright a,
+.information a{
+    text-decoration: none;
+    color: white;
+}
+
+.url a {
+    text-decoration: none;
+    color: black;
+}
+@media screen and (max-width: 1100px){
+    .container-body{
+        flex-wrap: wrap;
+    }
+    .colum2,
+    .colum3 {
+        margin-top: 10px;
+    }
+}
